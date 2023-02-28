@@ -58,7 +58,7 @@ El disparo se realiza descargando un capacitor de alta tensión que debe cargars
 
 La tensión máxima de carga es de 300 V. El robot tiene un circuito de protección que limita la tensión del capacitor a 250 V.
 
-## LEDs en los ojos
+## LEDs de los ojos
 
 Cada LED es controlado por tres bytes en formato R8G8B8.
 
@@ -76,7 +76,7 @@ username: robot1 o robot2
 password: robot1 o robot2
 ```
 
-Cada robot se identifica con un identificador robotId, que se utiliza como primer nivel del topic MQTT.
+Cada robot se identifica con un identificador `robotId`, que se utiliza como primer nivel del topic MQTT.
 
 Los topics de lectura tienen 3 niveles. Los topics de escritura tienen 4 niveles; el último nivel es “set” o “cmd”.
 
@@ -94,4 +94,4 @@ Los topics de lectura tienen 3 niveles. Los topics de escritura tienen 4 niveles
 | [robotId]/kicker/chargeVoltage/set | Tensión de carga del capacitor [V] | float | Write |
 | [robotId]/kicker/kick/cmd | Dispara el kicker con potencia [0-1] | float | Write |
 | [robotId]/kicker/chip/cmd | Dispara el chipper con potencia [0-1] | float | Write |
-| [robotId]/display/eye/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | uint8_t[6] | Write |
+| [robotId]/display/eyes/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | uint8_t[6] | Write |
