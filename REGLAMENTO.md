@@ -8,6 +8,10 @@ _EDACup_ es una competición robótica virtual organizada por capítulo de estud
 
 ## Regla 1: El campo de juego
 
+![Campo de juego](Images/Campo-de-juego.png)
+
+<figcaption align="center">El campo de juego</figcaption>
+
 El _campo de juego_ es rectangular, de 9 m de largo por 6 m de ancho, de color verde. Se encuentra marcado con líneas continuas blancas, de 0.01 metros de ancho.
 
 Las dos líneas de demarcación más largas se denominan _líneas de banda_. Las dos más cortas son las _líneas de meta_.
@@ -23,10 +27,6 @@ Frente a cada arco se encuentra un _área de defensa_ rectangular. Sus lados may
 Cada arco posee un _punto penal_ ubicado a 6 m frente al centro de cada arco.
 
 El _área técnica_ se extiende 1 m fuera de las líneas de demarcación.
-
-![Campo de juego](Images/Campo-de-juego.png)
-
-<figcaption align="center">El campo de juego</figcaption>
 
 ## Regla 2. La pelota
 
@@ -101,11 +101,11 @@ En caso de reiterado empate, se añaden tandas de cinco penales por tiempo indef
 
 El cronómetro del partido corre mientras los robots pueden manipular la pelota; el cronómetro no corre antes del saque inicial, tiro libre, tiro penal, o cuando el juego está detenido.
 
-Cuando un equipo hace 10 goles, gana automáticamente, independientemente de la fase en que se encuentra el juego.
+Cuando un equipo marca 10 goles, gana automáticamente, independientemente de la fase en que se encuentra el juego.
 
 ## Regla 8. Inicio del juego
 
-El juego se inicia con un _saque inicial_ al comienzo de cada uno de los dos periodos de un partido, de los tiempos suplementarios y después de anotar un gol.
+El juego se inicia con un _saque inicial_ al comienzo de cada uno de los dos periodos de un partido, de los tiempos suplementarios y después de marcar un gol.
 
 Procedimiento:
 
@@ -150,7 +150,7 @@ Cuando se produce un gol se emite el mensaje `pause`.
 
 ## Regla 12. Faltas y conducta incorrecta
 
-Los miembros de los equipos deben ser respetuosos con todos los involucrados en el juego. Se considera _conducta antideportivo_ insultar o fastidiar al equipo adversario, al árbitro, al árbitro asistente, al operador de juego, o no obedecer las órdenes del árbitro. La conducta antideportivo puede ser penalizada con una tarjeta amarilla, una tarjeta roja, con un forfait o con la descalificación del equipo.
+Los miembros de los equipos deben ser respetuosos con todos los involucrados en el juego. Se considera _conducta antideportiva_ insultar o fastidiar al equipo adversario, al árbitro, al árbitro asistente, al operador de juego, o no obedecer las órdenes del árbitro. La conducta antideportiva puede ser penalizada con una tarjeta amarilla, una tarjeta roja, con un forfait o con la descalificación del equipo.
 
 Si el juego no progresa por 10 segundos con la pelota en juego, el árbitro detiene el juego, lo reanuda al poco tiempo, y se emite el mensaje `continue`.
 
@@ -162,7 +162,7 @@ Las siguientes faltas detienen el juego, que se reanuda con un tiro libre para e
 - __Cruzar las líneas de banda__. Un robot mueve la pelota fuera de una de las líneas de banda.
 - __Cruzar la línea de meta propia__. Cuando un robot mueve la pelota más allá de la línea de meta del equipo propio, la pelota se ubica a 0.2 m de la línea de banda más cercana y a 0.2 m de la línea de meta.
 - __Cruzar la línea de meta del adversario__. Cuando un robot mueve la pelota mas allá de la línea de meta del equipo adversario, la pelota se ubica a 0.2 m de la línea de banda más cercana y a 1 m de la línea de meta.
-- __Empujar__. Un robot empuja a un robot adversario cuando ambos tienen contacto con la pelota o entre sí, y el robot ejerce una fuerza sobre el robot adversario, moviendo el punto entre ambos robots hacia el robots adversario.
+- __Empujar__. Un robot empuja a un robot adversario cuando ambos tienen contacto con la pelota o entre sí, y el robot ejerce una fuerza sobre el robot adversario, moviendo el punto entre ambos robots hacia el robot adversario.
 - __Rodear la pelota__. Impedir al equipo adversario el acceso a la pelota.
 - __Robot en el área de defensa del equipo adversario__. Cuando la pelota no está en juego, y en los tiros libres antes de que la pelota vuelve a estar en juego, ningún robot debe tocar o encontrarse en el área de defensa adversaria. Hay un período de gracia de 2 s para que los robots se alejen del área de defensa adversaria.
 - __Múltiples defensores__. Sólo puede haber un robot parcial o totalmente dentro del área de defensa propia. Infringir esta regla puede considerarse conducta antideportiva. Si dos robots de un mismo equipo están parcial o totalmente dentro del área de defensa propia y uno de ellos toca la pelota, el juego se detiene y se concede un tiro penal al equipo adversario.

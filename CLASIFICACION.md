@@ -12,7 +12,7 @@ El tiempo total que tu programa tarda se calcula de la siguiente manera:
 
 - Tienes 100 oportunidades para marcar gol.
 - El tiempo total se calcula como el tiempo que tardas en completar las 100 oportunidades.
-- El tiempo de cada oportunidad se calcula desde el momento en que la pelota toca el suelo hasta que cruza la línea de gol, tal como se especifica en la regla 8 del [reglamento de la competición](REGLAMENTO.md).
+- El tiempo de cada oportunidad se calcula desde el momento en que la pelota toca el suelo hasta que cruza la línea de gol, tal como se especifica en la regla 11 del [reglamento de la competición](REGLAMENTO.md).
 - Si tu robot no consigue marcar gol en menos de 10 segundos:
   - Si has tocado la pelota, se te contabilizarán 10 segundos para ese intento.
   - Si no has tocado la pelota, se te contabilizarán 20 segundos para ese intento.
