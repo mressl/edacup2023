@@ -1,4 +1,4 @@
-# Básicos
+# Básicos EDACup 2023
 
 ¡Bienvenido a la EDACup 2023!
 
