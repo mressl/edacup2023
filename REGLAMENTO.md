@@ -42,7 +42,7 @@ Todos los robots deben estar claramente identificados para que el árbitro pueda
 
 El _software de control_ de los robots debe ser totalmente autónomo: sólo puede acceder a la información de los propios robots, a la posición/velocidad/orientación y aceleración angular de los demás robots y de la pelota, y a los eventos provistos por el _software de control del juego_. El incumplimiento de esta regla es considerado conducta antideportiva.
 
-El software de control de los robots recibe mensajes del software de simulación del juego a fin de conocer el estado del juego.
+El software de control de los robots recibe mensajes del software de simulación del juego a fin de conocer el estado del juego (ver anexo).
 
 Durante un partido no es posible modificar el software de control de los robots. Entre partidos es posible hacer ajustes y correcciones.
 
@@ -222,3 +222,21 @@ Procedimiento:
 * si la pelota sigue en juego después de 10 s, el juego se detiene.
 
 Se concede el gol si se cumple la regla 11, o si el equipo defensor comete falta.
+
+## Anexo
+
+Lista de mensajes MQTT del software de simulación del juego:
+
+| Tópico | Descripción | Payload |
+| - | - | - |
+| ball/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] float[12] |
+| edacup/preKickOff | El equipo (1 o 2) está por realizar un saque inicial. | uint8_t |
+| edacup/kickOff | El equipo (1 o 2) debe realizar el saque inicial. | uint8_t |
+| edacup/preFreeKick | El equipo (1 o 2) está por realizar un tiro libre. | uint8_t |
+| edacup/freeKick | El equipo (1 o 2) debe realizar el tiro libre. | uint8_t |
+| edacup/prePenaltyKick | El equipo (1 o 2) está por realizar un tiro penal. | uint8_t |
+| edacup/penaltyKick | El equipo (1 o 2) debe realizar el tiro penal. | uint8_t |
+| edacup/pause | El juego se detuvo. | - |
+| edacup/continue | El juego se reanuda. | - |
+| edacup/removeRobot | El equipo (1 o 2) debe retirar un robot. | uint8_t |
+| edacup/addRobot | El equipo (1 o 2) puede incorporar un robot. | uint8_t |

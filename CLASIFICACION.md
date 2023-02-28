@@ -6,7 +6,7 @@ Proceso de clasificación - rev. 1
 
 Para poder participar en la competición EDACup 2023, es necesario que tu equipo se clasifique previamente. La prueba consiste en intentar marcar 100 goles en el menor tiempo posible.
 
-Para clasificar, deberás ejecutar el simulador de juego y seleccionar la opción "Clasificación". El software colocará automáticamente la pelota en un lugar aleatorio y deberás marcar goles en el arco del equipo 1 con el robot llamado `robot1.1` en el menor tiempo posible.
+Para clasificar, deberás ejecutar el simulador de juego y seleccionar la opción “Clasificación”. El software colocará automáticamente la pelota en un lugar aleatorio y deberás marcar goles en el arco del equipo 1 con el robot llamado `robot1.1` en el menor tiempo posible.
 
 El tiempo total que tu programa tarda se calcula de la siguiente manera:
 

@@ -40,11 +40,11 @@ Internamente, los controladores PID (proporcional, integral y derivativo) funcio
 
 ![Controlador PID](Images/PID.png)
 
-El controlador calcula continuamente el error entre la posición y orientación actual, y la posición y orientación del "setpoint": de la posición y orientación en la que quieres que el robot esté.
+El controlador calcula continuamente el error entre la posición y orientación actual, y la posición y orientación del “setpoint”: de la posición y orientación en la que quieres que el robot esté.
 
 Cambiando los parámetros P, I y D puedes cambiar el comportamiento del controlador PID. En general hay una relación de compromiso entre la velocidad de respuesta (cuán rápido llega a destino) y las oscilaciones (cuánto oscila alrededor del setpoint cuando llegó).
 
-Cuando uses el controlador PID, también debes cuidar que no se quemen los motores, controlando, o bien: cuán lejos colocas el "setpoint" respecto del valor actual, los parámetros del PID, y la temperatura de los motores.
+Cuando uses el controlador PID, también debes cuidar que no se quemen los motores, controlando, o bien: cuán lejos colocas el “setpoint” respecto del valor actual, los parámetros del PID, y la temperatura de los motores.
 
 ## Dribbler
 
@@ -64,9 +64,9 @@ Cada LED es controlado por tres bytes en formato R8G8B8.
 
 ## Protocolo de comunicaciones
 
-EDABot utiliza el protocolo MQTT para la comunicación de comandos y estados.
+EDABot utiliza el protocolo [MQTT](https://mqtt.org/) para la comunicación de comandos y estados.
 
-Para conectarte al servidorutiliza estos datos:
+Para conectarte al servidor utiliza estos datos:
 
 ```
 hostname: 127.0.0.1
@@ -76,22 +76,22 @@ username: robot1 o robot2
 password: robot1 o robot2
 ```
 
-Cada robot se identifica con un identificador `robotId`, que se utiliza como primer nivel del topic MQTT.
+Cada robot se identifica con un identificador `robotId`, que se utiliza como primer nivel del tópico MQTT.
 
-Los topics de lectura tienen 3 niveles. Los topics de escritura tienen 4 niveles; el último nivel es “set” o “cmd”.
+Los tópicos de lectura tienen 3 niveles. Los tópicos de escritura tienen 4 niveles; el último nivel es “set” o “cmd”.
 
-| Topic | Descripción | Payload | Acceso |
+| Tópico | Descripción | Payload | Acceso |
 | - | - | - | - |
-| [robotId]/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | float[12] | Read |
-| [robotId]/power/state | Consumo eléctrico total [W], nivel de batería [0 (vacío)-1 (lleno)], tensión capacitor del kicker [V] | float[3] | Read |
-| [robotId]/motors/state | Para cada motor (1-4, y dribbler): tensión motor N [V], corriente motor N [A], RPM motor N [60/s], temperatura chassis motor N [°C] | float[20] | Read |
-| [robotId]/motor[N]/voltage/set | Control por tensión motor N [V] | float | Write |
-| [robotId]/motor[N]/current/set | Control por corriente motor N [A] | float | Write |
+| [robotId]/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | float[12] | Lectura |
+| [robotId]/power/state | Consumo eléctrico total [W], nivel de batería [0 (vacío)-1 (lleno)], tensión capacitor del kicker [V] | float[3] | Lectura |
+| [robotId]/motors/state | Para cada motor (1-4, y dribbler): tensión motor N [V], corriente motor N [A], RPM motor N [60/s], temperatura chassis motor N [°C] | float[20] | Lectura |
+| [robotId]/motor[N]/voltage/set | Control por tensión motor N [V] | float | Escritura |
+| [robotId]/motor[N]/current/set | Control por corriente motor N [A] | float | Escritura |
 | [robotId]/pid/setpoint/set | Posición x, z [m] y rotación r [°] | float[3] |Write |
-| [robotId]/pid/parameters/set | Parámetros P, I, D del controlador de posición y parámetros P, I, D del controlador de rotación (por defecto: 20, 0, 6, 0.1, 0, 0.005). | float[6] | Write |
-| [robotId]/dribbler/voltage/set | Control por tensión dribbler [V] | float | Write |
-| [robotId]/dribbler/current/set | Control por corriente dribbler [A] | float | Write |
-| [robotId]/kicker/chargeVoltage/set | Tensión de carga del capacitor [V] | float | Write |
-| [robotId]/kicker/kick/cmd | Dispara el kicker con potencia [0-1] | float | Write |
-| [robotId]/kicker/chip/cmd | Dispara el chipper con potencia [0-1] | float | Write |
-| [robotId]/display/eyes/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | uint8_t[6] | Write |
+| [robotId]/pid/parameters/set | Parámetros P, I, D del controlador de posición y parámetros P, I, D del controlador de rotación (por defecto: 20, 0, 6, 0.1, 0, 0.005). | float[6] | Escritura |
+| [robotId]/dribbler/voltage/set | Control por tensión dribbler [V] | float | Escritura |
+| [robotId]/dribbler/current/set | Control por corriente dribbler [A] | float | Escritura |
+| [robotId]/kicker/chargeVoltage/set | Tensión de carga del capacitor [V] | float | Escritura |
+| [robotId]/kicker/kick/cmd | Dispara el kicker con potencia [0-1] | float | Escritura |
+| [robotId]/kicker/chip/cmd | Dispara el chipper con potencia [0-1] | float | Escritura |
+| [robotId]/display/eyes/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | uint8_t[6] | Escritura |
