@@ -94,5 +94,4 @@ Los topics de lectura tienen 3 niveles. Los topics de escritura tienen 4 niveles
 | [robotId]/kicker/chargeVoltage/set | Tensión de carga del capacitor [V] | float | Write |
 | [robotId]/kicker/kick/cmd | Dispara el kicker con potencia [0-1] | float | Write |
 | [robotId]/kicker/chip/cmd | Dispara el chipper con potencia [0-1] | float | Write |
-| [robotId]/display/leftEye/set | Color RGB del ojo izquierdo | uint8_t[3] | Write |
-| [robotId]/display/rightEye/set | Color RGB del ojo derecho | uint8_t[3] | Write |
+| [robotId]/display/eye/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | uint8_t[6] | Write |
