@@ -229,7 +229,7 @@ Lista de mensajes MQTT del software de simulación del juego:
 
 | Tópico | Descripción | Payload |
 | - | - | - |
-| ball/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | `float32[12]` |
+| ball/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | `float32 * 12` |
 | edacup/preKickOff | El equipo (1 o 2) está por realizar un saque inicial. | `uint8` |
 | edacup/kickOff | El equipo (1 o 2) debe realizar el saque inicial. | `uint8` |
 | edacup/preFreeKick | El equipo (1 o 2) está por realizar un tiro libre. | `uint8` |
