@@ -82,16 +82,16 @@ Los tópicos de lectura tienen 3 niveles. Los tópicos de escritura tienen 4 niv
 
 | Tópico | Descripción | Payload | Acceso |
 | - | - | - | - |
-| [robotId]/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | float[12] | Lectura |
-| [robotId]/power/state | Consumo eléctrico total [W], nivel de batería [0 (vacío)-1 (lleno)], tensión capacitor del kicker [V] | float[3] | Lectura |
-| [robotId]/motors/state | Para cada motor (1-4, y dribbler): tensión motor N [V], corriente motor N [A], RPM motor N [60/s], temperatura chassis motor N [°C] | float[20] | Lectura |
-| [robotId]/motor[N]/voltage/set | Control por tensión motor N [V] | float | Escritura |
-| [robotId]/motor[N]/current/set | Control por corriente motor N [A] | float | Escritura |
-| [robotId]/pid/setpoint/set | Posición x, z [m] y rotación r [°] | float[3] |Write |
-| [robotId]/pid/parameters/set | Parámetros P, I, D del controlador de posición y parámetros P, I, D del controlador de rotación (por defecto: 20, 0, 6, 0.1, 0, 0.005). | float[6] | Escritura |
-| [robotId]/dribbler/voltage/set | Control por tensión dribbler [V] | float | Escritura |
-| [robotId]/dribbler/current/set | Control por corriente dribbler [A] | float | Escritura |
-| [robotId]/kicker/chargeVoltage/set | Tensión de carga del capacitor [V] | float | Escritura |
-| [robotId]/kicker/kick/cmd | Dispara el kicker con potencia [0-1] | float | Escritura |
-| [robotId]/kicker/chip/cmd | Dispara el chipper con potencia [0-1] | float | Escritura |
-| [robotId]/display/eyes/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | uint8_t[6] | Escritura |
+| [robotId]/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | `float[12]` | Lectura |
+| [robotId]/power/state | Consumo eléctrico total [W], nivel de batería [0 (vacío)-1 (lleno)], tensión capacitor del kicker [V] | `float[3]` | Lectura |
+| [robotId]/motors/state | Para cada motor (1-4, y dribbler): tensión motor N [V], corriente motor N [A], RPM motor N [60/s], temperatura chassis motor N [°C] | `float[20]` | Lectura |
+| [robotId]/motor[N]/voltage/set | Control por tensión motor N [V] | `float` | Escritura |
+| [robotId]/motor[N]/current/set | Control por corriente motor N [A] | `float` | Escritura |
+| [robotId]/pid/setpoint/set | Posición x, z [m] y rotación r [°] | `float[3]` |Write |
+| [robotId]/pid/parameters/set | Parámetros P, I, D del controlador de posición y parámetros P, I, D del controlador de rotación (por defecto: 20, 0, 6, 0.1, 0, 0.005). | `float[6]` | Escritura |
+| [robotId]/dribbler/voltage/set | Control por tensión dribbler [V] | `float` | Escritura |
+| [robotId]/dribbler/current/set | Control por corriente dribbler [A] | `float` | Escritura |
+| [robotId]/kicker/chargeVoltage/set | Tensión de carga del capacitor [V] | `float` | Escritura |
+| [robotId]/kicker/kick/cmd | Dispara el kicker con potencia [0-1] | `float` | Escritura |
+| [robotId]/kicker/chip/cmd | Dispara el chipper con potencia [0-1] | `float` | Escritura |
+| [robotId]/display/eyes/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | `uint8_t[6]` | Escritura |

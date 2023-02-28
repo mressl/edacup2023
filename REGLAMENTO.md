@@ -229,14 +229,14 @@ Lista de mensajes MQTT del software de simulación del juego:
 
 | Tópico | Descripción | Payload |
 | - | - | - |
-| ball/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | float[12] |
-| edacup/preKickOff | El equipo (1 o 2) está por realizar un saque inicial. | uint8_t |
-| edacup/kickOff | El equipo (1 o 2) debe realizar el saque inicial. | uint8_t |
-| edacup/preFreeKick | El equipo (1 o 2) está por realizar un tiro libre. | uint8_t |
-| edacup/freeKick | El equipo (1 o 2) debe realizar el tiro libre. | uint8_t |
-| edacup/prePenaltyKick | El equipo (1 o 2) está por realizar un tiro penal. | uint8_t |
-| edacup/penaltyKick | El equipo (1 o 2) debe realizar el tiro penal. | uint8_t |
+| ball/motion/state | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | `float[12]` |
+| edacup/preKickOff | El equipo (1 o 2) está por realizar un saque inicial. | `uint8_t` |
+| edacup/kickOff | El equipo (1 o 2) debe realizar el saque inicial. | `uint8_t` |
+| edacup/preFreeKick | El equipo (1 o 2) está por realizar un tiro libre. | `uint8_t` |
+| edacup/freeKick | El equipo (1 o 2) debe realizar el tiro libre. | `uint8_t` |
+| edacup/prePenaltyKick | El equipo (1 o 2) está por realizar un tiro penal. | `uint8_t` |
+| edacup/penaltyKick | El equipo (1 o 2) debe realizar el tiro penal. | `uint8_t` |
 | edacup/pause | El juego se detuvo. | - |
 | edacup/continue | El juego se reanuda. | - |
-| edacup/removeRobot | El equipo (1 o 2) debe retirar un robot. | uint8_t |
-| edacup/addRobot | El equipo (1 o 2) puede incorporar un robot. | uint8_t |
+| edacup/removeRobot | El equipo (1 o 2) debe retirar un robot. | `uint8_t` |
+| edacup/addRobot | El equipo (1 o 2) puede incorporar un robot. | `uint8_t` |
