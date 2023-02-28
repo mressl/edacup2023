@@ -16,3 +16,4 @@ Para probar los robots, descarga el [simulador de juego de la EDACup 2023](Downl
 * Lee las [especificaciones EDABot](SPECS.md) para aprender más acerca de los robots de la EDACup.
 * El equipo 1 juega a la izquierda (coordenada X negativa) y el equipo 2, a la derecha (coordenada X positiva).
 * Los robots del equipo 1 se identifican con el prefijo MQTT “robot1.[Y]”; los robots del equipo 2, con el prefijo MQTT “robot2.[Y]”. [Y] es el número de cada robot (1 a 6).
+* Puedes cambiar las camisetas del equipo, editanto los archivos `robot1.png` y `robot2.png` que se encuentran en el simulador de juego.
