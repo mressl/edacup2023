@@ -94,4 +94,4 @@ Los tópicos de lectura tienen 3 niveles. Los tópicos de escritura tienen 4 niv
 | [robotId]/kicker/chargeVoltage/set | Tensión de carga del capacitor [V] | `float32` | Escritura |
 | [robotId]/kicker/kick/cmd | Dispara el kicker con potencia [0-1] | `float32` | Escritura |
 | [robotId]/kicker/chip/cmd | Dispara el chipper con potencia [0-1] | `float32` | Escritura |
-| [robotId]/display/eyes/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | `uint8_t[6]` | Escritura |
+| [robotId]/display/eyes/set | Color RGB del ojo izquierdo y color RGB del ojo derecho | `uint8[6]` | Escritura |
