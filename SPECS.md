@@ -66,7 +66,7 @@ Cada LED es controlado por tres bytes en formato R8G8B8.
 
 EDABot utiliza el protocolo [MQTT](https://mqtt.org/) para la comunicación de comandos y estados.
 
-Para conectarte al servidor utiliza estos datos:
+Para conectarte al simulador de juego utiliza estos datos:
 
 ```
 hostname: 127.0.0.1
