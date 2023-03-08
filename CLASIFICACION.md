@@ -1,7 +1,5 @@
 # Clasificación EDACup 2023 
 
-Versión 1
-
 ## Descripción
 
 Para que tu equipo pueda participar en la EDACup 2023, es necesario que clasifique previamente en una prueba en la que deberá intentar marcar 100 goles en el menor tiempo posible.
