@@ -14,7 +14,7 @@ Los ocho equipos con los tiempos más bajos se clasificarán. Se utilizarán las
 
 Para aumentar las posibilidades de éxito de tu equipo, te recomendamos seguir estos consejos:
 
-* Utiliza alguna [biblioteca de vectores](https://pypi.org/search/?q=vector) para trabajar cómodamente con vectores de álgebra lineal.
+* Utiliza alguna [biblioteca de vectores](https://pypi.org/search/?q=vector) para trabajar cómodamente con [vectores](https://es.wikipedia.org/wiki/Vector) de [álgebra lineal](https://es.wikipedia.org/wiki/%C3%81lgebra_lineal).
 * Suscríbete sólo a los tópicos que necesitas.
 * No envíes comandos inútiles.
 * Envía comandos desde la función callback de mensajes MQTT.
