@@ -1,4 +1,6 @@
-# Clasificación EDACup 2023
+# EDACup 2023
+
+Proceso de clasificación - rev. 1
 
 ## Descripción
 
