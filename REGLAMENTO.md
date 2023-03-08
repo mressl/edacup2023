@@ -124,7 +124,7 @@ Cuando el juego se interrumpe por una causa que no favorece a ningún equipo, co
 
 ## Regla 10. Pelota en juego
 
-La pelota se considera en juego cuando se cumplen las siguientes condiciones:
+La pelota se encuentra en juego cuando se cumplen las siguientes condiciones:
 
 - Se ha emitido el mensaje `kickOff`, `freeKick` o `penaltyKick`, y la pelota ha recorrido al menos 0.05 metros o han pasado 10 segundos desde la emisión del mensaje.
 - Se ha emitido el mensaje `continue`.
