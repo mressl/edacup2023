@@ -1,6 +1,6 @@
-# EDACup 2023
+# Reglamento de juego EDACup 2023
 
-Reglamento de juego rev. 1
+Versión 1
 
 ## Introducción
 
