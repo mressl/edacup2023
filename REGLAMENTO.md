@@ -38,7 +38,7 @@ Cada equipo debe designar un _representante_, quien será el encargado de comuni
 
 Todos los robots deben estar claramente identificados para que el árbitro pueda reconocerlos durante el partido. La identificación se realiza a través de la pantalla LCD de cada EDABot, la cual debe mostrar el logo del equipo y el número del robot. El número debe ser de al menos 8 píxeles de alto. El logo no debe contener imágenes de carácter político, religioso o personal.
 
-El software de control de los robots debe estar escrito en [lenguaje Python](https://www.python.org/), y requerir un máximo de 8 GB de memoria y un [núcleo de procesador](https://es.wikipedia.org/wiki/Procesador_multin%C3%BAcleo). Además, debe ser completamente autónomo y solo puede acceder a la información de los propios robots, la posición/velocidad/orientación y aceleración angular de los demás robots y de la pelota, y los eventos proporcionados por el software de control del juego. El incumplimiento de esta regla se considerará conducta antideportiva.
+El software de control de los robots debe estar escrito en [lenguaje Python](https://www.python.org/), y requerir un máximo de 8 GB de memoria y un [núcleo de procesador](https://es.wikipedia.org/wiki/Procesador_multin%C3%BAcleo). Además, debe ser completamente autónomo y sólo puede acceder a la información de los propios robots, la posición/velocidad/orientación y aceleración angular de los demás robots y de la pelota, y los eventos proporcionados por el software de control del juego. El incumplimiento de esta regla se considerará conducta antideportiva.
 
 El software de control de los robots recibe mensajes del software de simulación del juego para conocer el estado del juego (ver anexo).
 
