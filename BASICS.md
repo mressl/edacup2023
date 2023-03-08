@@ -1,19 +1,20 @@
-# EDACup 2023
+# Básicos EDACup 2023
 
 ¡Bienvenido a la EDACup 2023!
 
-Supongo que habrás visto el vídeo de la final de la EDACup 2022, y ahora quieres jugar con los robots. Manos a la obra.
+Supongo que habrás visto el vídeo de la final de la EDACup 2022 y ahora quieres jugar con los robots. Manos a la obra.
 
 Antes de comenzar, debes tener conocimientos mínimos de [Python](https://es.wikipedia.org/wiki/Python).
 
-Para probar los robots, descarga el [simulador de juego de la EDACup 2023](Downloads) y los ejemplos que se encuentran en la carpeta [Ejemplos](Ejemplos). Ejecuta el simulador y selecciona “Sandbox”; luego ejecuta los ejemplos de Python que descargaste:
+Para probar los robots de la EDACup 2023, necesitarás descargar el [simulador de juego de la EDACup 2023](Downloads), los [ejemplos de la EDACup 2023](Ejemplos), y asegúrate de tener instalados [Python](https://www.anaconda.com/products/distribution) junto a las bibliotecas [paho-mqtt](https://pypi.org/project/paho-mqtt/) y [keyboard](https://pypi.org/project/keyboard/). Una vez que hayas instalado todo, ejecuta el simulador y selecciona "Sandbox". Luego, procede a ejecutar los ejemplos que descargaste:
 
-* EDAPark.py te permite controlar un robot de manera libre. Con la ventana de Python activa, utiliza las flechas del teclado o las teclas WASD para controlar la traslación, y Q y E para controlar la rotación. También te sugerimos que en el simulador aprietes las teclas 1 a 9 para probar las diferentes cámaras.
-* EDADance.py te permite controlar un robot para que siga una trayectoria preestablecida de manera autónoma.
+* Con `EDAPark.py` puedes controlar un robot de manera libre utilizando las teclas `W`, `A`, `S` y `D` para la traslación y `Q` y `E` para la rotación. Además, en el simulador puedes probar diferentes cámaras pulsando las teclas del `1` al `9`. Además, si el robot se cae o se le queman los motores, puedes restablecerlo presionando la tecla `R`.
+* Con `EDADance.py` puedes mover un robot en una trayectoria preestablecida.
 
 ## Más cosas
 
-* Lee las [especificaciones EDABot](SPECS.md) para aprender más acerca de los robots de la EDACup.
-* El equipo 1 juega a la izquierda (coordenada X negativa) y el equipo 2, a la derecha (coordenada X positiva).
-* Los robots del equipo 1 se identifican con el prefijo MQTT “robot1.[Y]”; los robots del equipo 2, con el prefijo MQTT “robot2.[Y]”. [Y] es el número de cada robot (1 a 6).
-* Puedes cambiar las camisetas del equipo, editanto los archivos `robot1.png` y `robot2.png` que se encuentran en el simulador de juego. Estos archivos deben ser de 112x16 píxeles. Los primeros 16x16 píxeles corresponden al logotipo del equipo, los sucesivos 16x16 píxeles corresponden a las imágenes identificatorias de cada robot.
+* Para conocer más acerca de los robots de la EDACup, revisa las [especificaciones EDABot 2023](SPECS.md).
+* El equipo 1 juega en la parte izquierda del campo (coordenada X negativa), mientras que el equipo 2 juega en la parte derecha (coordenada X positiva).
+* Los robots de cada equipo se identifican con un `robotId` diferente: los del equipo 1 se llaman `robot1.[M]`, donde `M` corresponde al número de cada robot (del 1 al 6), mientras que los del equipo 2 se llaman `robot2.[M]`.
+* Si deseas personalizar las camisetas de los equipos, puedes hacerlo editando los archivos `robot1.png` y `robot2.png` que se encuentran junto al simulador de juego. Estos archivos deben tener una resolución de 112x16. Los primeros 16x16 píxeles se utilizan para el logotipo del equipo, mientras que los sucesivos 16x16 píxeles se corresponden con las imágenes de cada robot.
+* Para iniciar el sandbox directamente, llama al simulador de juego mediante la línea de comando con el argumento `-sandbox`.

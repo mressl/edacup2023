@@ -1,24 +1,22 @@
-# EDACup 2023
-
-Proceso de clasificación - rev. 1
+# Clasificación EDACup 2023
 
 ## Descripción
 
-Para poder participar en la competición EDACup 2023, es necesario que tu equipo se clasifique previamente. La prueba consiste en intentar marcar 100 goles en el menor tiempo posible.
+Para que tu equipo pueda participar en la EDACup 2023, es necesario que clasifique previamente en una prueba en la que deberá intentar marcar 100 goles en el menor tiempo posible.
 
-Para clasificar, deberás ejecutar el simulador de juego y seleccionar la opción “Clasificación”. El software colocará automáticamente la pelota en un lugar aleatorio y deberás marcar goles en el arco del equipo 1 con el robot llamado `robot1.1` en el menor tiempo posible.
+Para ello, debes ejecutar el simulador de juego y seleccionar la opción "Clasificación". El software colocará automáticamente la pelota en una posición aleatoria y deberás marcar goles en el arco del equipo 1 con el robot `robot1.1`, mientras que el robot `robot2.1` intentará obstaculizarte. Sólo tendrás control sobre el robot `robot1.1`.
 
-El tiempo total que tu programa tarda se calcula de la siguiente manera:
+El tiempo total se calcula sumando el tiempo que tardas en completar los 100 intentos. El tiempo de cada intento se medirá desde que la pelota toca el suelo hasta que entre en el arco, tal como se especifica en la regla 11 del [reglamento de la competición](REGLAMENTO.md). Si el robot no logra marcar un gol en menos de 10 segundos, se contabilizarán 10 segundos. Si el robot toca la pelota antes de que ésta toque el suelo, se contabilizarán 10 segundos.
 
-- Tienes 100 oportunidades para marcar gol.
-- El tiempo total se calcula como el tiempo que tardas en completar las 100 oportunidades.
-- El tiempo de cada oportunidad se calcula desde el momento en que la pelota toca el suelo hasta que cruza la línea de gol, tal como se especifica en la regla 11 del [reglamento de la competición](REGLAMENTO.md).
-- Si tu robot no consigue marcar gol en menos de 10 segundos:
-  - Si has tocado la pelota, se te contabilizarán 10 segundos para ese intento.
-  - Si no has tocado la pelota, se te contabilizarán 20 segundos para ese intento.
+Los ocho equipos con los tiempos más bajos se clasificarán. Se utilizarán las mismas posiciones de pelota y robot obstaculizador en los 100 intentos para todos los equipos.
 
-## Clasificación
+## Consejos
 
-Para clasificar, deberás entregar tu programa en el [sitio de clasificación de la competición](https://www.ieee.org) antes de 10 de abril de 2023.
+Para aumentar las posibilidades de éxito de tu equipo, te recomendamos seguir estos consejos:
 
-Clasificarán los ocho equipos con los tiempos más bajos.
+* Utiliza alguna [biblioteca de vectores](https://pypi.org/search/?q=vector) para trabajar cómodamente con vectores de álgebra lineal.
+* Suscríbete sólo a los tópicos que necesitas.
+* No envíes comandos inútiles.
+* Envía comandos desde la función callback de mensajes MQTT.
+* Busca los [cuellos de botella](https://es.wikipedia.org/wiki/Cuello_de_botella) de tu algoritmo y optimiza aquello que más tiempo consume.
+* Para iniciar el modo de clasificación directamente, llama al simulador de juego mediante la línea de comando con el argumento `-classification`.
