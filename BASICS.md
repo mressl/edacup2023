@@ -14,7 +14,7 @@ Para probar los robots de la EDACup 2023, necesitarás descargar el [simulador d
 ## Más cosas
 
 * Para conocer más acerca de los robots de la EDACup, revisa las [especificaciones EDABot 2023](SPECS.md).
-* El equipo 1 juega en la parte izquierda del campo (coordenada X negativa), mientras que el equipo 2 juega en la parte derecha (coordenada X positiva).
-* Los robots de cada equipo se identifican con un `robotId` diferente: los del equipo 1 se llaman `robot1.[M]`, donde `M` corresponde al número de cada robot (del 1 al 6), mientras que los del equipo 2 se llaman `robot2.[M]`.
+* El equipo 1 juega en la parte izquierda del campo (coordenada `x` negativa), mientras que el equipo 2 juega en la parte derecha (coordenada `x` positiva).
+* Los robots de cada equipo se identifican con un `robotId` diferente: los del equipo 1 se llaman `robot1.[M]`, donde `[M]` corresponde al número de cada robot (del 1 al 6), mientras que los del equipo 2 se llaman `robot2.[M]`.
 * Si deseas personalizar las camisetas de los equipos, puedes hacerlo editando los archivos `robot1.png` y `robot2.png` que se encuentran junto al simulador de juego. Estos archivos deben tener una resolución de 112x16. Los primeros 16x16 píxeles se utilizan para el logotipo del equipo, mientras que los sucesivos 16x16 píxeles se corresponden con las imágenes de cada robot.
 * Para iniciar el sandbox directamente, llama al simulador de juego mediante la línea de comando con el argumento `-sandbox`.
