@@ -50,7 +50,7 @@ El kicker y el chipper son [solenoides](https://es.wikipedia.org/wiki/Solenoide)
 
 Para realizar el disparo, se descarga un [capacitor](https://es.wikipedia.org/wiki/Condensador_el%C3%A9ctrico) de alta tensión que debe cargarse previamente. Este capacitor es compartido por el kicker y el chipper.
 
-La tensión máxima de carga del capacitor es de 250 V.
+La tensión máxima de carga es de 300 V. El robot tiene un circuito de protección que limita la tensión del capacitor a 250 V.
 
 ## LEDs de los ojos
 
@@ -69,7 +69,7 @@ username: robot1 o robot2
 password: robot1 o robot2
 ```
 
-Cada robot se identifica mediante un identificador único `\[robotId\]`, que se utiliza como el primer nivel del tópico MQTT.
+Cada robot se identifica mediante un identificador único `[robotId]`, que se utiliza como el primer nivel del tópico MQTT.
 
 Los tópicos de lectura (a los que te puedes [suscribir](https://en-m-wikipedia-org.translate.goog/wiki/Publish%E2%80%93subscribe_pattern?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp)), tienen tres niveles y se actualizan a una frecuencia de 10 Hz (es decir, diez veces por segundo).
 
@@ -79,14 +79,14 @@ A continuación te presentamos una tabla con los tópicos MQTT, su descripción,
 
 | Tópico | Descripción | Payload | Acceso |
 | - | - | - | - |
-| `\[robotId\]/motion/state` | Incluye la posición 3D \[m\], velocidad 3D \[m/s\], rotación 3D (ángulos eulerianos) \[°\], velocidad angular 3D \[°/s\] | `float32 * 12` | Lectura |
-| `\[robotId\]/power/state` | Incluye el consumo eléctrico total \[W\], nivel de batería entre 0 (vacío) y 1 (lleno), tensión capacitor del kicker \[V\] | `float32 * 3` | Lectura |
-| `\[robotId\]/motors/state` | Incluye para cada motor (ruedas 1-4 y dribbler 5): tensión motor `\[N\]` \[V\], corriente motor `\[N\]` \[A\], RPM motor `\[N\]` \[60/s\], temperatura chassis motor `\[N\]` \[°C\] | `float32 * 20` | Lectura |
-| `\[robotId\]/motor\[N\]/voltage/set` | Controla el motor `\[N\]` (ruedas 1-4 y dribbler 5) mediante tensión \[V\] | `float32` | Escritura |
-| `\[robotId\]/motor\[N\]/current/set` | Controla el motor `\[N\]` (ruedas 1-4 y dribbler 5) mediante corriente \[A\] | `float32` | Escritura |
-| `\[robotId\]/pid/setpoint/set` | Establece la posición `x`, `z` \[m\] y la rotación `r` \[°\] del controlador PID | `float32 * 3` | Escritura |
-| `\[robotId\]/pid/parameters/set` | Establece los parámetros `P`, `I`, `D` del controlador PID y los parámetros `P`, `I`, `D` del controlador de rotación (por defecto: 20, 0, 6, 0.1, 0, 0.005) | `float32 * 6` | Escritura |
-| `\[robotId\]/kicker/chargeVoltage/set` | Establece la tensión de carga del capacitor \[V\] | `float32` | Escritura |
-| `\[robotId\]/kicker/kick/cmd` | Dispara el kicker con una potencia entre 0 y 1 | `float32` | Escritura |
-| `\[robotId\]/kicker/chip/cmd` | Dispara el chipper con una potencia entre 0 y 1 | `float32` | Escritura |
-| `\[robotId\]/display/eyes/set` | Color RGB del ojo izquierdo y derecho | `uint8 * 6` | Escritura |
+| `[robotId]/motion/state` | Incluye la posición 3D \[m\], velocidad 3D \[m/s\], rotación 3D (ángulos eulerianos) \[°\], velocidad angular 3D \[°/s\] | `float32 * 12` | Lectura |
+| `[robotId]/power/state` | Incluye el consumo eléctrico total \[W\], nivel de batería entre 0 (vacío) y 1 (lleno), tensión capacitor del kicker \[V\] | `float32 * 3` | Lectura |
+| `[robotId]/motors/state` | Incluye para cada motor (ruedas 1-4 y dribbler 5): tensión motor `[N]` \[V\], corriente motor `[N]` \[A\], RPM motor `[N]` \[60/s\], temperatura chassis motor `[N]` \[°C\] | `float32 * 20` | Lectura |
+| `[robotId]/motor[N]/voltage/set` | Controla el motor `[N]` (ruedas 1-4 y dribbler 5) mediante tensión \[V\] | `float32` | Escritura |
+| `[robotId]/motor[N]/current/set` | Controla el motor `[N]` (ruedas 1-4 y dribbler 5) mediante corriente \[A\] | `float32` | Escritura |
+| `[robotId]/pid/setpoint/set` | Establece la posición `x`, `z` \[m\] y la rotación `r` \[°\] del controlador PID | `float32 * 3` | Escritura |
+| `[robotId]/pid/parameters/set` | Establece los parámetros `P`, `I`, `D` del controlador PID y los parámetros `P`, `I`, `D` del controlador de rotación (por defecto: 20, 0, 6, 0.1, 0, 0.005) | `float32 * 6` | Escritura |
+| `[robotId]/kicker/chargeVoltage/set` | Establece la tensión de carga del capacitor \[V\] | `float32` | Escritura |
+| `[robotId]/kicker/kick/cmd` | Dispara el kicker con una potencia entre 0 y 1 | `float32` | Escritura |
+| `[robotId]/kicker/chip/cmd` | Dispara el chipper con una potencia entre 0 y 1 | `float32` | Escritura |
+| `[robotId]/display/eyes/set` | Color RGB del ojo izquierdo y derecho | `uint8 * 6` | Escritura |
