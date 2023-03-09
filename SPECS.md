@@ -73,7 +73,7 @@ Cada robot se identifica mediante un identificador único `[robotId]`, que se ut
 
 Los tópicos de lectura (a los que te puedes [suscribir](https://en-m-wikipedia-org.translate.goog/wiki/Publish%E2%80%93subscribe_pattern?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp)), tienen tres niveles y se actualizan a una frecuencia de 10 Hz (es decir, diez veces por segundo).
 
-Los tópicos de escritura (a los que puedes [publicar](https://en-m-wikipedia-org.translate.goog/wiki/Publish%E2%80%93subscribe_pattern?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp)) tienen cuatro niveles, siendo el último nivel "set" o "cmd".
+Los tópicos de escritura (a los que puedes [publicar](https://en-m-wikipedia-org.translate.goog/wiki/Publish%E2%80%93subscribe_pattern?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp)) tienen cuatro niveles, siendo el último nivel `set` o `cmd`.
 
 A continuación te presentamos una tabla con los tópicos MQTT, su descripción, su carga útil y el nivel de acceso:
 
