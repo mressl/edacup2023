@@ -8,7 +8,7 @@ Tu programa debe recibir un parámetro por línea de comando ([sys.argv](https:/
 
 ## Consejos
 
-Para aumentar las posibilidades de éxito de tu equip, sigue estos consejos:
+Para aumentar las posibilidades de éxito de tu equipo, sigue estos consejos:
 
 * Suscríbete sólo a los tópicos que necesitas.
 * No envíes comandos inútiles.
