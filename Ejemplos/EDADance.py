@@ -25,10 +25,10 @@ import paho.mqtt.client as mqtt
 # robotId del robot que controlamos
 robot_id = 'robot1.1'
 
-# Tiempo
+# Tiempo absoluto
 time = 0
 
-# Mensajes por segundo
+# Tiempo por mensaje
 delta_time = 0.1    
 
 
@@ -41,20 +41,20 @@ def update_robot(current_position_x, current_position_z):
     omega_x = 0.5
     omega_z = 0.4
 
-    position_x = 2 * math.cos(omega_x * time)
-    position_z = 2 * math.sin(omega_z * time)
+    setpoint_x = 2 * math.cos(omega_x * time + 1)
+    setpoint_z = 2 * math.sin(omega_z * time + 1)
 
-    # Limita el setpoint a la cercanía de la posición actual
-    delta_position_x = position_x - current_position_x
-    delta_position_z = position_z - current_position_z
+    # Limita la distancia máxima entre el "setpoint" y la posición actual
+    delta_position_x = setpoint_x - current_position_x
+    delta_position_z = setpoint_z - current_position_z
     delta_position_modulus = math.sqrt(delta_position_x * delta_position_x +\
         delta_position_z * delta_position_z)
     if delta_position_modulus > 1:
-        position_x = current_position_x + delta_position_x / delta_position_modulus
-        position_z = current_position_z + delta_position_z / delta_position_modulus
+        setpoint_x = current_position_x + delta_position_x / delta_position_modulus
+        setpoint_z = current_position_z + delta_position_z / delta_position_modulus
 
-    # Controla la posición del PID
-    payload = struct.pack('fff', position_x, position_z, 0)
+    # Envía el "setpoint" al PID
+    payload = struct.pack('fff', setpoint_x, setpoint_z, 180)
     client.publish(robot_id + '/pid/setpoint/set', payload)
 
     # Actualiza el tiempo
@@ -76,10 +76,10 @@ def on_mqtt_connect(client, userdata, flags, rc):
     elif rc == 5:
         print('Conexión rechazada: no autorizada.')
     else:
-        # Nos conectamos...
+        # Estamos conectados
         print('Conexión exitosa.')
 
-        # ... y nos suscribimos a algunas variables del robot
+        # Suscripción a "[robot_id]/motion/state"
         client.subscribe(robot_id + '/motion/state')
 
 # Callback: mensaje del simulador de juego

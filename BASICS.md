@@ -6,9 +6,9 @@ Supongo que habrás visto el vídeo de la final de la EDACup 2022 y ahora quiere
 
 Antes de comenzar, debes tener conocimientos mínimos de [Python](https://es.wikipedia.org/wiki/Python).
 
-Para probar los robots de la EDACup 2023, necesitarás descargar el [simulador de juego de la EDACup 2023](Downloads), los [ejemplos de la EDACup 2023](Ejemplos), y asegúrate de tener instalados [Python](https://www.anaconda.com/products/distribution) junto a las bibliotecas [paho-mqtt](https://pypi.org/project/paho-mqtt/) y [keyboard](https://pypi.org/project/keyboard/). Una vez que hayas instalado todo, ejecuta el simulador y selecciona "Sandbox". Luego, procede a ejecutar los ejemplos que descargaste:
+Para probar los robots de la EDACup 2023, deberás descargar el [simulador de juego de la EDACup 2023](Downloads), los [ejemplos de la EDACup 2023](Ejemplos), y asegurarte de tener instalado [Python](https://www.anaconda.com/products/distribution) junto a las bibliotecas [paho-mqtt](https://pypi.org/project/paho-mqtt/) y [keyboard](https://pypi.org/project/keyboard/). Una vez que hayas instalado todo, ejecuta el simulador y selecciona "Sandbox". Luego, ejecuta los ejemplos que descargaste:
 
-* Con `EDAPark.py` puedes controlar un robot de manera libre utilizando las teclas `W`, `A`, `S` y `D` para la traslación y `Q` y `E` para la rotación. Además, en el simulador puedes probar diferentes cámaras pulsando las teclas del `1` al `9`. Además, si el robot se cae o se le queman los motores, puedes restablecerlo presionando la tecla `R`.
+* Con `EDAPark.py` puedes controlar un robot de manera libre utilizando las teclas `W`, `A`, `S` y `D` para la traslación y `Q` y `E` para la rotación. Además, en el simulador puedes probar diferentes cámaras pulsando las teclas del `1` al `9`. Si el robot se cae o se le queman los motores, puedes restablecerlo presionando la tecla `R`.
 * Con `EDADance.py` puedes mover un robot en una trayectoria preestablecida.
 
 ## Más cosas

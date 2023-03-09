@@ -2,13 +2,13 @@
 
 ## Descripción
 
-Es esencial que leas cuidadosamente el [reglamento de la competición](REGLAMENTO.md) antes de participar en la EDACup 2023, para que estés familiarizado con las normas y condiciones que rigen el evento.
+Antes de participar en la EDACup 2023, es esencial que leas cuidadosamente el [reglamento de la competición](REGLAMENTO.md) para que estés familiarizado con las normas y condiciones que rigen el evento.
 
-Tu programa debe recibir un parámetro por línea de comando ([sys.argv](https://docs.python.org/es/3/library/sys.html)) que indique de qué lado debe jugar. Si el parámetro es "1", tu programa jugará en el equipo 1 (a la izquierda); si es "2", jugará en el equipo 2 (a la derecha).
+Tu programa debe recibir un parámetro por línea de comando ([sys.argv](https://docs.python.org/es/3/library/sys.html)) que indique de qué lado debe jugar. Si el parámetro es `1`, tu programa jugará en el equipo 1 (a la izquierda); si es `2`, jugará en el equipo 2 (a la derecha).
 
 ## Consejos
 
-Si deseas incrementar las posibilidades de éxito de tu equipo, te recomendamos seguir estos consejos:
+Para aumentar las posibilidades de éxito de tu equip, sigue estos consejos:
 
 * Suscríbete sólo a los tópicos que necesitas.
 * No envíes comandos inútiles.

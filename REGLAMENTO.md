@@ -213,7 +213,7 @@ Lista de mensajes MQTT del software de simulación del juego:
 
 | Tópico | Descripción | Payload |
 | - | - | - |
-| `ball/motion/state` | Posición 3D [m], velocidad 3D [m/s], rotación 3D (ángulos eulerianos) [°], velocidad angular 3D [°/s] | `float32 * 12` |
+| `ball/motion/state` | Posición 3D \[m\], velocidad 3D \[m/s\], rotación 3D (ángulos eulerianos) \[°\], velocidad angular 3D \[°/s\] | `float32 * 12` |
 | `edacup/preKickOff` | Indica que el equipo (`1` o `2`) debe preparar un saque inicial. | `uint8` |
 | `edacup/kickOff` | Indica que el equipo (`1` o `2`) debe realizar el saque inicial. | `uint8` |
 | `edacup/preFreeKick` | Indica que el equipo (`1` o `2`) debe preparar un tiro libre. | `uint8` |
@@ -222,5 +222,5 @@ Lista de mensajes MQTT del software de simulación del juego:
 | `edacup/penaltyKick` | Indica que el equipo (`1` o `2`) debe realizar el tiro penal. | `uint8` |
 | `edacup/pause` | Indica que el juego se detuvo. | - |
 | `edacup/continue` | Indica que el juego se reanuda. | - |
-| `edacup/removeRobot` | Indica que el  equipo (`1` o `2`) debe retirar un robot. | `uint8` |
+| `edacup/removeRobot` | Indica que el equipo (`1` o `2`) debe retirar un robot. | `uint8` |
 | `edacup/addRobot` | Indica que el equipo (`1` o `2`) puede incorporar un robot. | `uint8` |
