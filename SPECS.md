@@ -32,7 +32,7 @@ Ten en cuenta que una tensión o corriente positiva causará que la rueda gire e
 
 El controlador de posición y orientación [PID](https://es.wikipedia.org/wiki/Controlador_PID)  simplifica en gran medida el manejo de los robots. Te recomendamos encarecidamente utilizarlo en lugar de controlar los motores por tensión o corriente.
 
-El funcionamiento del controlador es sencillo: simplemente le indicas al robot la posición y orientación que deseas (coordenadas X, Z, y giro respecto al eje Y) y el robot trabajará para alcanzar esa posición y orientación, independientemente de dónde se encuentre.
+El funcionamiento del controlador es sencillo: simplemente le indicas al robot la posición y orientación que deseas (coordenadas `x`, `z`, y giro respecto al eje `y`) y el robot trabajará para alcanzar esa posición y orientación, independientemente de dónde se encuentre.
 
 ![Controlador PID](Images/PID.png)
 
