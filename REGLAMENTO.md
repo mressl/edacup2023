@@ -10,8 +10,6 @@ _EDACup_ es una competición robótica virtual organizada por el capítulo de es
 
 ![Campo de juego](Images/Campo-de-juego.png)
 
-<figcaption align="center">El campo de juego</figcaption>
-
 El _campo de juego_ es un rectángulo verde de 9 metros de largo por 6 metros de ancho, delimitado por líneas continuas blancas de 0.01 metros de ancho.
 
 Las _líneas de banda_, que son las dos líneas de demarcación más largas, dividen el campo en dos mitades, mientras que las _líneas de meta_, que son las dos líneas de demarcación más cortas, se encuentran en los extremos del campo.
