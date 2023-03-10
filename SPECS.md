@@ -1,4 +1,6 @@
-# Especificaciones EDABot 2023 - Versión 1
+# Especificaciones EDABot 2023
+
+Versión 1
 
 ![Campo de juego](Images/EDABot.jpg)
 
