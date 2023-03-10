@@ -161,5 +161,5 @@ client = mqtt.Client()
 client.username_pw_set('robot1', 'robot1')
 client.on_connect = on_mqtt_connect
 client.on_message = on_mqtt_message
-client.connect('192.168.1.178', 1883, 60)
+client.connect('localhost', 1883, 60)
 client.loop_forever()
