@@ -60,7 +60,7 @@ Cada LED es controlado por tres bytes en formato R8G8B8.
 
 ## Protocolo de comunicaciones
 
-EDABot utiliza el [protocolo de comunicaciones MQTT](https://en-m-wikipedia-org.translate.goog/wiki/MQTT?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp) para enviar y recibir comandos y estados.
+EDABot utiliza el protocolo de comunicaciones [MQTT](https://en-m-wikipedia-org.translate.goog/wiki/MQTT?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp) para enviar y recibir comandos y estados.
 
 Para conectarte al simulador de juego, debes utilizar los siguientes datos:
 
