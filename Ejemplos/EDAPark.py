@@ -11,8 +11,8 @@
 # * Aprieta las teclas WASD para moverte, QE para rotar.
 #
 # Sugerencias:
-# * Estudia la API de paho-mqtt: https://pypi.org/project/paho-mqtt/#usage-and-api
-# * Estudia la API de struct para trabajar con payloads MQTT: https://docs.python.org/3/library/struct.html
+# * Estudia paho-mqtt: https://pypi.org/project/paho-mqtt/#usage-and-api
+# * Estudia struct para trabajar con payloads MQTT: https://docs.python.org/3/library/struct.html
 #
 # Tareas:
 # * Añade controles para el dribbler, el kicker y el chipper.
@@ -26,7 +26,7 @@ import keyboard
 # robotId del robot que controlamos
 robot_id = 'robot1.1'  
 
- # Arreglo con el estado de las teclas (0: no apretado, 1: apretado)
+ # Estado de las teclas (0: no apretado, 1: apretado)
 keys_state = {     
     'w': 0,
     'a': 0,
@@ -36,10 +36,10 @@ keys_state = {
     'e': 0,
 }
 
-# Permite limitar el número de mensajes motion/state
+# Indice de mensaje motion/state (para mostrar menos mensajes)
 motion_state_message_index = 0  
 
-# Permite limitar el número de mensajes motors/state
+# Indice de mensaje motors/state (para mostrar menos mensajes)
 motors_state_message_index = 0  
 
 
@@ -56,8 +56,8 @@ def update_robot():
     k_translation = 0.707 * 5
     k_rotation = 0.4
 
-    # Convierte la traslación y rotación en órdenes a los motores
-    # (rota el vector de traslación 45 grados, y le suma la rotación)
+    # Convierte la traslación y rotación en tensiones de los motores
+    # (rota el vector de traslación 45 grados y le suma la rotación)
     motor1 = k_translation * (-translation_x + translation_z) -\
         k_rotation * rotation
     motor2 = k_translation * (-translation_x - translation_z) -\
@@ -99,6 +99,9 @@ def on_mqtt_connect(client, userdata, flags, rc):
         # Suscripción a "[robot_id]/motion/state" y "[robot_id]/motors/state"
         client.subscribe(robot_id + '/motion/state')
         client.subscribe(robot_id + '/motors/state')
+
+        payload = struct.pack('f', 300)
+        client.publish(robot_id + '/kicker/chargeVoltage/set', payload)
 
 # Callback: mensaje del simulador de juego
 def on_mqtt_message(client, userdata, msg):
@@ -152,6 +155,10 @@ def on_keyboard_event(event):
 
         # Actualiza el robot
         update_robot()
+
+    if (event.name == 't'):
+        payload = struct.pack('f', 1)
+        client.publish(robot_id + '/kicker/kick/cmd', payload)
 
 
 # Código principal

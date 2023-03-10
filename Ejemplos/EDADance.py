@@ -10,8 +10,8 @@
 # * Ejecuta este programa.
 #
 # Sugerencias:
-# * Estudia la API de paho-mqtt: https://pypi.org/project/paho-mqtt/#usage-and-api
-# * Estudia la API de struct para trabajar con payloads MQTT: https://docs.python.org/3/library/struct.html
+# * Estudia paho-mqtt: https://pypi.org/project/paho-mqtt/#usage-and-api
+# * Estudia struct para trabajar con payloads MQTT: https://docs.python.org/3/library/struct.html
 #
 # Tareas:
 # * Cambia la trayectoria.
