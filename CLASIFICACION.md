@@ -6,7 +6,7 @@ Para que tu equipo pueda participar en la EDACup 2023, primero debe clasificar e
 
 El tiempo total se calcula sumando el tiempo que tardas en completar los 100 intentos. El tiempo de cada intento se medirá desde que la pelota toca el suelo hasta que entre en el arco, según lo especificado en la regla 11 del [reglamento de la competición](REGLAMENTO.md). Si el robot no logra marcar un gol en menos de 10 segundos, se contabilizarán 10 segundos. Si el robot toca la pelota antes de que ésta toque el suelo, también se contabilizarán 10 segundos.
 
-Solo los ocho equipos con los tiempos más bajos se clasificarán. Las posiciones de pelota y robot obstaculizador en los 100 intentos serán las mismas para todos los equipos.
+Sólo los ocho equipos con los tiempos más bajos se clasificarán. Las posiciones de pelota y robot obstaculizador en los 100 intentos serán las mismas para todos los equipos.
 
 ## Inscripción
 
