@@ -10,7 +10,7 @@ Solo los ocho equipos con los tiempos más bajos se clasificarán. Las posicione
 
 ## Inscripción
 
-En pocos días encontrarás aquí el enlace para la inscripción a la clasificación.
+Dentro de poco tiempo encontrarás aquí el enlace para la inscripción a la clasificación.
 
 ## Ayuda
 
