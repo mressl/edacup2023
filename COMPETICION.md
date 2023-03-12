@@ -17,7 +17,7 @@ Para aumentar las posibilidades de éxito de tu equipo, sigue estos consejos:
 * Suscríbete sólo a los tópicos que necesitas.
 * No envíes comandos inútiles.
 * Envía comandos desde la función callback de mensajes MQTT.
-* Analiza los partidos de la RoboCup SSL, la competición que inspiró la EDACup. Puedes buscar en [YouTube]](https://www.youtube.com/results?search_query=robocup+ssl).
+* Analiza los partidos de la RoboCup SSL, la competición que inspiró la EDACup. Puedes buscar en [YouTube](https://www.youtube.com/results?search_query=robocup+ssl).
 * Investiga artículos científicos sobre la RoboCup SSL. Puedes buscar en [Google Scholar](https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=robocup+ssl&btnG=).
 * Utiliza la técnica de [selfplay](https://en-m-wikipedia-org.translate.goog/wiki/Self-play_(reinforcement_learning_technique)?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp) para optimizar la respuesta de tu equipo.
 * Para simular eventos de juego, utiliza el control remoto. Puedes utilizar las teclas `+` y `-` para añadir o quitar goles, faltas, y tarjetas amarillas y rojas. Para preparar un saque inicial, utiliza la tecla `Saque`; para un tiro libre, la tecla `Libre`; y para un tiro penal, la tecla `Penal`. Para detener o continuar el juego, puedes utilizar la tecla `Pausa` (dos barras verticales) o `Espacio` de tu teclado. Cuando la pelota no está en juego, las flechas del control remoto o de tu teclado te permiten mover un cursor que se superpone al campo de juego. Con la tecla `Pelota` puedes mover la pelota al cursor y con la tecla `Reset` puedes reiniciar el robot más cercano al cursor.
