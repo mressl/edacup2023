@@ -8,6 +8,14 @@ El tiempo total se calcula sumando el tiempo que tardas en completar los 100 int
 
 Solo los ocho equipos con los tiempos más bajos se clasificarán. Las posiciones de pelota y robot obstaculizador en los 100 intentos serán las mismas para todos los equipos.
 
+## Inscripción
+
+En pocos días encontrarás aquí el enlace para la inscripción a la clasificación.
+
+## Ayuda
+
+Te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2) para hacer preguntas y compartir tus inquietudes.
+
 ## Consejos
 
 Para aumentar las posibilidades de éxito de tu equipo, te recomendamos seguir estos consejos:
@@ -19,3 +27,4 @@ Para aumentar las posibilidades de éxito de tu equipo, te recomendamos seguir e
 * Identifica los [cuellos de botella](https://es.wikipedia.org/wiki/Cuello_de_botella) de tu algoritmo y optimiza las partes que más tiempo consumen.
 * Verifica que el simulador de juego funciona correctamente consultando los [FPS](https://es.wikipedia.org/wiki/Fotogramas_por_segundo) con la tecla `F`.
 * Para iniciar el modo de clasificación directamente, llama al simulador de juego mediante la línea de comando con el argumento `-classification`.
+* Si encuentras un error en el simulador, [repórtalo](https://github.com/mressl/edacup2023/issues). No lo aproveches para tu beneficion ya que podrás quedar descalificado por conducta antideportiva.

@@ -11,6 +11,10 @@ Para probar los robots de la EDACup 2023, deberás descargar el [simulador de ju
 * Con `EDAPark.py` puedes controlar un robot de manera libre utilizando las teclas `W`, `A`, `S` y `D` para la traslación, y `Q` y `E` para la rotación. Además, en el simulador puedes probar diferentes cámaras pulsando las teclas del `1` al `9`. Si el robot se cae o se le queman los motores, puedes restablecerlo presionando la tecla `R`.
 * Con `EDADance.py` puedes mover un robot en una trayectoria preestablecida.
 
+## Ayuda
+
+Te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2) para hacer preguntas y compartir tus inquietudes.
+
 ## Más cosas
 
 * Para conocer más acerca de los robots de la EDACup, revisa las [especificaciones EDABot 2023](SPECS.md).
