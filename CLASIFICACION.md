@@ -27,4 +27,4 @@ Para aumentar las posibilidades de éxito de tu equipo, te recomendamos seguir e
 * Identifica los [cuellos de botella](https://es.wikipedia.org/wiki/Cuello_de_botella) de tu algoritmo y optimiza las partes que más tiempo consumen.
 * Verifica que el simulador de juego funciona correctamente consultando los [FPS](https://es.wikipedia.org/wiki/Fotogramas_por_segundo) con la tecla `F`.
 * Para iniciar el modo de clasificación directamente, llama al simulador de juego mediante la línea de comando con el argumento `-classification`.
-* Si encuentras un error en el simulador, [repórtalo](https://github.com/mressl/edacup2023/issues). No lo aproveches para tu beneficion ya que podrás quedar descalificado por conducta antideportiva.
+* Si encuentras un error en el simulador, [repórtalo](https://github.com/mressl/edacup2023/issues). No lo aproveches para tu beneficio, ya que podrás quedar descalificado por conducta antideportiva.
