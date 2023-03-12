@@ -1,6 +1,6 @@
 # EDACup 2023
 
-¡Bienvenido a la competición de robótica virtual EDACup 2023!
+¡Bienvenido al repositorio oficial de la competición de robótica virtual EDACup 2023!
 
 Si no sabes qué es la EDACup, mira este vídeo de la final del año anterior:
 
