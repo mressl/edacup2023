@@ -4,7 +4,7 @@
 
 Supongo que habrás visto el vídeo de la final de la EDACup 2022 y ahora quieres jugar con los robots. Manos a la obra.
 
-Antes de comenzar, debes tener conocimientos mínimos de [Python](https://es.wikipedia.org/wiki/Python).
+Antes de comenzar, debes tener conocimientos mínimos de [lenguaje Python](https://es.wikipedia.org/wiki/Python).
 
 Para probar los robots de la EDACup 2023, deberás descargar el [simulador de juego](Downloads) y los [ejemplos](Ejemplos) de la EDACup 2023, y asegurarte de tener instalado [Python](https://www.anaconda.com/products/distribution) junto a las bibliotecas [paho-mqtt](https://pypi.org/project/paho-mqtt/) y [keyboard](https://pypi.org/project/keyboard/). Una vez que hayas instalado todo, ejecuta el simulador y selecciona "Sandbox". Luego, ejecuta los ejemplos que descargaste:
 
