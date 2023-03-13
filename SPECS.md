@@ -6,7 +6,7 @@ Versión 1
 
 ## Resumen
 
-EDABot es un robot virtual móvil diseñado para deportes robóticos con tres grados de libertad de movimiento (dos de traslación y uno de rotación). Está equipado con cuatro ruedas omniwheel, un controlador de posición y orientación PID, un dribbler para controlar la pelota, un kicker para disparar la pelota hacia adelante, un chipper para disparar la pelota a 45°, una pantalla LCD en la parte superior y dos LEDs en los ojos.
+EDABot es un robot virtual móvil diseñado para deportes robóticos con tres grados de libertad de movimiento (dos de traslación y uno de rotación). Está equipado con cuatro ruedas omniwheel, controlador PID de posición y orientación, un dribbler para controlar la pelota, un kicker para disparar la pelota hacia adelante, un chipper para disparar la pelota a 45°, una pantalla LCD en la parte superior y dos LEDs en los ojos.
 
 | Ítem                            | Descripción                                         |
 |---------------------------------|-----------------------------------------------------|
@@ -30,11 +30,11 @@ Las cuatro ruedas del EDABot están ubicadas a 90° entre sí, con un ángulo de
 
 Ten en cuenta que una tensión o corriente positiva causará que la rueda gire en sentido horario (desde el frente de cada rueda). Además, es importante que no excedas la temperatura máxima que los motores soportan, ya que de lo contrario podrían quemarse.
 
-## Controlador de posición y orientación PID
+## Controlador PID de posición y orientación
 
-El controlador de posición y orientación [PID](https://es.wikipedia.org/wiki/Controlador_PID)  simplifica en gran medida el manejo de los robots. Te recomendamos encarecidamente utilizarlo en lugar de controlar los motores por tensión o corriente.
+El [controlador PID](https://es.wikipedia.org/wiki/Controlador_PID) de posición y orientación simplifica en gran medida el manejo de los robots. Te recomendamos encarecidamente utilizarlo en lugar de controlar los motores por tensión o corriente.
 
-El funcionamiento del controlador es sencillo: simplemente le indicas al robot la posición y orientación que deseas (coordenadas `x`, `z`, y giro respecto al eje `y`) y el robot trabajará para alcanzar esa posición y orientación, independientemente de dónde se encuentre.
+El funcionamiento del controlador es sencillo: simplemente le indicas al robot la posición y orientación que deseas (coordenadas `x` y `z`, y giro respecto al eje `y`) y el robot trabajará para alcanzar esa posición y orientación, independientemente de dónde se encuentre.
 
 ![Controlador PID](Images/PID.png)
 
@@ -81,14 +81,14 @@ A continuación te presentamos una tabla con los tópicos MQTT, su descripción,
 
 | Tópico | Descripción | Payload | Acceso |
 | - | - | - | - |
-| `[robotId]/motion/state` | Incluye la posición 3D \[m\], velocidad 3D \[m/s\], rotación 3D (ángulos eulerianos) \[°\], velocidad angular 3D \[°/s\] | `float32 * 12` | Lectura |
-| `[robotId]/power/state` | Incluye el consumo eléctrico total \[W\], nivel de batería entre 0 (vacío) y 1 (lleno), tensión capacitor del kicker \[V\] | `float32 * 3` | Lectura |
-| `[robotId]/motors/state` | Incluye para cada motor (ruedas 1-4 y dribbler 5): tensión motor `[N]` \[V\], corriente motor `[N]` \[A\], RPM motor `[N]` \[60/s\], temperatura chassis motor `[N]` \[°C\] | `float32 * 20` | Lectura |
+| `[robotId]/motion/state` | Incluye la posición 3D \[m\], velocidad 3D \[m/s\], rotación 3D (ángulos eulerianos) \[°\] y velocidad angular 3D \[°/s\] del robot | `float32 * 12` | Lectura |
+| `[robotId]/power/state` | Incluye el consumo eléctrico total \[W\], el nivel de batería entre 0 (vacío) y 1 (lleno), y la tensión del capacitor del kicker/chipper \[V\] | `float32 * 3` | Lectura |
+| `[robotId]/motors/state` | Incluye, para cada motor (ruedas 1-4 y dribbler 5): la tensión del motor `[N]` \[V\], la corriente del motor `[N]` \[A\], los RPM del motor `[N]` \[60/s\] y la temperatura de chassis del motor `[N]` \[°C\] | `float32 * 20` | Lectura |
 | `[robotId]/motor[N]/voltage/set` | Controla el motor `[N]` (ruedas 1-4 y dribbler 5) mediante tensión \[V\] | `float32` | Escritura |
 | `[robotId]/motor[N]/current/set` | Controla el motor `[N]` (ruedas 1-4 y dribbler 5) mediante corriente \[A\] | `float32` | Escritura |
-| `[robotId]/pid/setpoint/set` | Establece la posición `x`, `z` \[m\] y la rotación `r` \[°\] del controlador PID | `float32 * 3` | Escritura |
-| `[robotId]/pid/parameters/set` | Establece los parámetros `P`, `I`, `D` del controlador PID y los parámetros `P`, `I`, `D` del controlador de rotación (por defecto: 20, 0, 6, 0.1, 0, 0.005) | `float32 * 6` | Escritura |
+| `[robotId]/pid/setpoint/set` | Establece la posición `x`, `z` \[m\] y rotación `r` \[°\] del controlador PID | `float32 * 3` | Escritura |
+| `[robotId]/pid/parameters/set` | Establece los parámetros `P`, `I`, `D` del controlador PID de posición, y los parámetros `P`, `I`, `D` del controlador PID de orientación (por defecto: 20, 0, 6, 0.1, 0, 0.005) | `float32 * 6` | Escritura |
 | `[robotId]/kicker/chargeVoltage/set` | Establece la tensión de carga del capacitor \[V\] | `float32` | Escritura |
 | `[robotId]/kicker/kick/cmd` | Dispara el kicker con una potencia entre 0 y 1 | `float32` | Escritura |
 | `[robotId]/kicker/chip/cmd` | Dispara el chipper con una potencia entre 0 y 1 | `float32` | Escritura |
-| `[robotId]/display/eyes/set` | Color RGB del ojo izquierdo y derecho | `uint8 * 6` | Escritura |
+| `[robotId]/display/eyes/set` | Establece el color RGB del ojo izquierdo y derecho | `uint8 * 6` | Escritura |

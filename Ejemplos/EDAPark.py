@@ -100,9 +100,6 @@ def on_mqtt_connect(client, userdata, flags, rc):
         client.subscribe(robot_id + '/motion/state')
         client.subscribe(robot_id + '/motors/state')
 
-        payload = struct.pack('f', 300)
-        client.publish(robot_id + '/kicker/chargeVoltage/set', payload)
-
 # Callback: mensaje del simulador de juego
 def on_mqtt_message(client, userdata, msg):
     global motion_state_message_index, motors_state_message_index
@@ -155,10 +152,6 @@ def on_keyboard_event(event):
 
         # Actualiza el robot
         update_robot()
-
-    if (event.name == 't'):
-        payload = struct.pack('f', 1)
-        client.publish(robot_id + '/kicker/kick/cmd', payload)
 
 
 # Código principal

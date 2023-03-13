@@ -16,7 +16,7 @@ Las _líneas de banda_, que son las dos líneas de demarcación más largas, div
 
 La _línea central_ une los puntos medios de las líneas de banda. El _punto central_ se encuentra en su punto medio, rodeado por una _circunferencia_ de 1 metro de diámetro.
 
-Cada línea de meta tiene un _arco_, con dos paredes verticales, una pared posterior de 0.16 metros de alto y un techo. El espacio interior entre las paredes laterales mide 1 metro de ancho y 0.18 metros de profundidad, con un grosor de 0.02 metros que no invade la línea de meta.
+Cada línea de meta tiene un _arco_, con dos paredes verticales y una pared posterior de 0.16 metros de alto, y un techo. El espacio interior entre las paredes laterales mide 1 metro de ancho y 0.18 metros de profundidad, con un grosor de 0.02 metros que no invade la línea de meta.
 
 Enfrente de cada arco hay un _área de defensa_ rectangular, con lados mayores de 2 metros paralelos a las líneas de meta y lados menores de 1 metro paralelos a las líneas de banda.
 
@@ -36,7 +36,7 @@ Cada equipo debe designar un _representante_, quien será el encargado de comuni
 
 Todos los robots deben estar claramente identificados para que el árbitro pueda reconocerlos durante el partido. La identificación se realiza a través de la pantalla LCD de cada EDABot, la cual debe mostrar el logo del equipo y el número del robot. El número debe ser de al menos 8 píxeles de alto. El logo no debe contener imágenes de carácter político, religioso o personal.
 
-El software de control de los robots debe estar escrito en [Python](https://www.python.org/), y requerir un máximo de 8 GB de memoria y un [núcleo de procesador](https://es.wikipedia.org/wiki/Procesador_multin%C3%BAcleo). Además, debe ser completamente autónomo y sólo puede acceder a la información de los propios robots, la posición/velocidad/orientación y aceleración angular de los demás robots y de la pelota, y los eventos proporcionados por el software de control del juego. El incumplimiento de esta regla se considerará conducta antideportiva.
+El software de control de los robots debe estar escrito en [lenguaje Python](https://www.python.org/), y requerir un máximo de 8 GB de memoria y un [núcleo de procesador](https://es.wikipedia.org/wiki/Procesador_multin%C3%BAcleo). Además, debe ser completamente autónomo y sólo puede acceder a la información de los propios robots, la posición/velocidad/orientación y aceleración angular de los demás robots y de la pelota, y los eventos proporcionados por el software de control del juego. El incumplimiento de esta regla se considerará conducta antideportiva.
 
 El software de control de los robots recibe mensajes del software de simulación del juego para conocer el estado del juego (ver anexo).
 
@@ -211,7 +211,7 @@ Lista de mensajes MQTT del software de simulación del juego:
 
 | Tópico | Descripción | Payload |
 | - | - | - |
-| `ball/motion/state` | Posición 3D \[m\], velocidad 3D \[m/s\], rotación 3D (ángulos eulerianos) \[°\], velocidad angular 3D \[°/s\] | `float32 * 12` |
+| `ball/motion/state` | Posición 3D \[m\], velocidad 3D \[m/s\], rotación 3D (ángulos eulerianos) \[°\] y velocidad angular 3D \[°/s\] de la pelota | `float32 * 12` |
 | `edacup/preKickOff` | Indica que el equipo (`1` o `2`) debe preparar un saque inicial. | `uint8` |
 | `edacup/kickOff` | Indica que el equipo (`1` o `2`) debe realizar el saque inicial. | `uint8` |
 | `edacup/preFreeKick` | Indica que el equipo (`1` o `2`) debe preparar un tiro libre. | `uint8` |

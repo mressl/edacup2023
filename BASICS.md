@@ -1,7 +1,5 @@
 # Básicos EDACup 2023
 
-¡Bienvenido a la EDACup 2023!
-
 Supongo que habrás visto el vídeo de la final de la EDACup 2022 y ahora quieres jugar con los robots. Manos a la obra.
 
 Antes de comenzar, debes tener conocimientos mínimos de [lenguaje Python](https://es.wikipedia.org/wiki/Python).
