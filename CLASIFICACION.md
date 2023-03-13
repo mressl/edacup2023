@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Para que tu equipo pueda participar en la EDACup 2023, primero debe clasificar en una prueba en la que deberá intentar marcar 100 goles en el menor tiempo posible. Para hacerlo, ejecuta el simulador de juego y selecciona la opción "Clasificación". El software colocará automáticamente la pelota en una posición aleatoria y deberás marcar goles en el arco del equipo 1 con el robot `robot1.1`, mientras que el robot `robot2.1` intentará obstaculizarte. Ten en cuenta que sólo podrás controlar el robot `robot1.1`.
+Para que tu equipo pueda participar en la EDACup 2023, primero debe clasificar en una prueba en la que deberá intentar marcar 100 goles en el menor tiempo posible. Para hacerlo, ejecuta el simulador de juego y selecciona la opción "Clasificación". El software colocará automáticamente la pelota en una posición aleatoria y deberás marcar goles con un programa escrito en [lenguaje Python](https://www.python.org/) en el arco del equipo 1 con el robot `robot1.1`, mientras que el robot `robot2.1` intentará obstaculizarte. Ten en cuenta que sólo podrás controlar el robot `robot1.1`.
 
 El tiempo total se calcula sumando el tiempo que tardas en completar los 100 intentos. El tiempo de cada intento se medirá desde que la pelota toca el suelo hasta que entre en el arco, según lo especificado en la regla 11 del [reglamento de la competición](REGLAMENTO.md). Si el robot no logra marcar un gol en menos de 10 segundos, se contabilizarán 10 segundos. Si el robot toca la pelota antes de que ésta toque el suelo, también se contabilizarán 10 segundos.
 
