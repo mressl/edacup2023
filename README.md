@@ -2,7 +2,9 @@
 
 ¡Bienvenido a la competición de robótica virtual EDACup 2023!
 
-La competición consiste en programar un equipo de robots autónomos. Es completamente gratuita y está abierta a participantes de todo el mundo, sin importar su ubicación geográfica.
+La competición consiste en programar un equipo de robots autónomos.
+
+Es completamente gratuita y está abierta a participantes de todo el mundo, sin importar su ubicación geográfica.
 
 Aquí puedes ver la final de la competición del año anterior:
 
