@@ -14,7 +14,7 @@ Dentro de poco tiempo encontrarás aquí el enlace para la inscripción a la cla
 
 ## Ayuda
 
-Te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2) para hacer preguntas y compartir tus inquietudes.
+Para obtener más información sobre la clasificación y hacer preguntas, te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2).
 
 ## Consejos
 

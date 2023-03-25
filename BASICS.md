@@ -11,7 +11,7 @@ Para probar los robots de la EDACup 2023, deberás descargar el [simulador de ju
 
 ## Ayuda
 
-Te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2) para hacer preguntas y compartir tus inquietudes.
+Para obtener más información sobre los básicos y hacer preguntas, te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2).
 
 ## Más cosas
 

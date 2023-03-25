@@ -8,7 +8,7 @@ Tu programa debe recibir un parámetro por línea de comando ([sys.argv](https:/
 
 ## Ayuda
 
-Te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2) para hacer preguntas y compartir tus inquietudes.
+Para obtener más información sobre la competición y hacer preguntas, te invitamos a unirte a nuestro [servidor de Discord](https://discord.gg/RAwJQxQyW2).
 
 ## Consejos
 
